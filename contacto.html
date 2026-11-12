@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Hotel Real Azul</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+        .info-card {
+            background: white;
+            border: 1px solid #dbeafe;
+            border-left: 5px solid #1d4ed8;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .info-icon {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        .info-card h3 {
+            color: #0b2575;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .info-card p {
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media (max-width: 850px) {
+            .contact-layout { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">
+                <span class="royal-logo"><span class="royal-crown">♛</span></span>
+                <span class="hotel-name">Hotel <span>Real Azul</span></span>
+            </a>
+            <div class="header-right">
+                <span class="currency">USD</span>
+                <a href="contacto.html" class="header-link">Ayuda 24/7</a>
+                <div id="authArea" style="display:flex; align-items:center; gap:10px;">
+                    <a href="login.html" class="header-button">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="login.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Contáctanos</h1>
+            <p>Estamos disponibles las 24 horas para resolver tus consultas y ayudarte a planificar tu estadía.</p>
+        </section>
+
+        <section class="section">
+            <div class="container contact-layout">
+                <div class="form-panel">
+                    <h2 style="margin-bottom:18px;">Envíanos un mensaje</h2>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nombreContacto">Nombre completo</label>
+                            <input type="text" id="nombreContacto" placeholder="Ej. Carlos Hernández" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correoContacto">Correo electrónico</label>
+                            <input type="email" id="correoContacto" placeholder="correo@ejemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asuntoContacto">Motivo de consulta</label>
+                            <select id="asuntoContacto" required>
+                                <option value="reservacion">Consulta sobre reservación</option>
+                                <option value="eventos">Eventos y salones</option>
+                                <option value="transporte">Traslado al aeropuerto</option>
+                                <option value="otro">Otro asunto</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensajeContacto">Mensaje</label>
+                            <textarea id="mensajeContacto" rows="4" placeholder="Escribe aquí tu consulta..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn" style="width:100%; padding:14px; font-size:16px;">
+                            Enviar mensaje
+                        </button>
+
+                        <div id="contactAlert" class="alert-success">
+                            ✓ ¡Mensaje enviado con éxito! Nuestro equipo de recepción te responderá a la brevedad.
+                        </div>
+                    </form>
+                </div>
+
+                <aside>
+                    <h2 style="margin-bottom:18px;">Información directa</h2>
+
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Colonia Escalón, Paseo General Escalón #4520, San Salvador, El Salvador.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h3>Teléfonos de Recepción</h3>
+                            <p>Recepción 24/7: +503 2200-0000<br>Reservaciones: +503 7800-1234</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <h3>Correo Electrónico</h3>
+                            <p>info@hotelrealazul.com<br>reservas@hotelrealazul.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🕒</div>
+                        <div>
+                            <h3>Horarios de Check-in / Check-out</h3>
+                            <p>Check-in: A partir de las 3:00 PM<br>Check-out: Hasta las 12:00 PM</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Hotel Real Azul</h3>
+                    <p>Tu mejor opción de hospedaje en San Salvador. Elegancia, confort y atención personalizada las 24 horas.</p>
+                </div>
+                <div>
+                    <h3>Enlaces rápidos</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="habitaciones.html">Habitaciones</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="reservas.html">Reservas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>San Salvador, El Salvador</p>
+                    <p>Tel: +503 2200-0000</p>
+                    <p>info@hotelrealazul.com</p>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2026 Hotel Real Azul. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

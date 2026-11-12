@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas | Hotel Real Azul</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .booking-layout {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+        .form-row-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .summary-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-left: 5px solid #1d4ed8;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        @media (max-width: 850px) {
+            .booking-layout, .form-row-2 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">
+                <span class="royal-logo"><span class="royal-crown">♛</span></span>
+                <span class="hotel-name">Hotel <span>Real Azul</span></span>
+            </a>
+            <div class="header-right">
+                <span class="currency">USD</span>
+                <a href="contacto.html" class="header-link">Ayuda 24/7</a>
+                <div id="authArea" style="display:flex; align-items:center; gap:10px;">
+                    <a href="login.html" class="header-button">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html" class="active">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Reserva tu Habitación</h1>
+            <p>Selecciona tus fechas y confirma tu estadía al instante sin cargos ocultos.</p>
+        </section>
+
+        <section class="section">
+            <div class="container booking-layout">
+                <div class="form-panel">
+                    <h2 style="margin-bottom:18px;">Datos de la reservación</h2>
+
+                    <form id="reservaForm">
+                        <div class="form-group">
+                            <label for="habitacionSelect">Tipo de habitación</label>
+                            <select id="habitacionSelect" required>
+                                <option value="individual" data-precio="40">Habitación Individual Confort ($40 / noche)</option>
+                                <option value="doble" data-precio="65" selected>Habitación Doble Estándar ($65 / noche)</option>
+                                <option value="ejecutiva" data-precio="85">Habitación Doble Ejecutiva ($85 / noche)</option>
+                                <option value="suite" data-precio="150">Suite Real Azul ($150 / noche)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="entrada">Fecha de entrada</label>
+                                <input type="date" id="entrada" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="salida">Fecha de salida</label>
+                                <input type="date" id="salida" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="nombreHuesped">Nombre completo del huésped</label>
+                                <input type="text" id="nombreHuesped" placeholder="Ej. Sofía Martínez" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="correoHuesped">Correo electrónico</label>
+                                <input type="email" id="correoHuesped" placeholder="correo@ejemplo.com" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn" style="width:100%; padding:14px; font-size:16px;">
+                            Confirmar reservación
+                        </button>
+                    </form>
+                </div>
+
+                <aside class="form-panel">
+                    <h3 style="color:#0b2575; margin-bottom:14px;">Resumen de tu estancia</h3>
+                    <div id="resumenCalculo" class="summary-box"></div>
+
+                    <h4 style="color:#0b2575; font-size:15px; margin-bottom:10px;">Tu tarifa incluye:</h4>
+                    <ul style="list-style:none; color:#475569; font-size:14px; line-height:1.9;">
+                        <li>✓ Acceso gratuito a piscina climatizada y gimnasio</li>
+                        <li>✓ WiFi de alta velocidad en todo el hotel</li>
+                        <li>✓ Estacionamiento privado vigilado 24/7</li>
+                        <li>✓ Cancelación gratuita hasta 24 horas antes</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Hotel Real Azul</h3>
+                    <p>Tu mejor opción de hospedaje en San Salvador. Elegancia, confort y atención personalizada las 24 horas.</p>
+                </div>
+                <div>
+                    <h3>Enlaces rápidos</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="habitaciones.html">Habitaciones</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="reservas.html">Reservas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>San Salvador, El Salvador</p>
+                    <p>Tel: +503 2200-0000</p>
+                    <p>info@hotelrealazul.com</p>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2026 Hotel Real Azul. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

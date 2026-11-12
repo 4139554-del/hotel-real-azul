@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitaciones | Hotel Real Azul</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">
+                <span class="royal-logo"><span class="royal-crown">♛</span></span>
+                <span class="hotel-name">Hotel <span>Real Azul</span></span>
+            </a>
+            <div class="header-right">
+                <span class="currency">USD</span>
+                <a href="contacto.html" class="header-link">Ayuda 24/7</a>
+                <div id="authArea" style="display:flex; align-items:center; gap:10px;">
+                    <a href="login.html" class="header-button">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="habitaciones.html" class="active">Habitaciones</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Nuestras Habitaciones</h1>
+            <p>Espacios diseñados para ofrecer descanso absoluto, iluminación natural y tecnología moderna.</p>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:28px;">
+                    <button type="button" class="btn-outline active-filter" data-filter="todas">Todas</button>
+                    <button type="button" class="btn-outline" data-filter="individual">Individuales</button>
+                    <button type="button" class="btn-outline" data-filter="doble">Dobles</button>
+                    <button type="button" class="btn-outline" data-filter="suite">Suites</button>
+                </div>
+
+                <div class="cards-3">
+                    <article class="card" data-category="individual">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80" alt="Habitación Individual">
+                        <div class="card-content">
+                            <span class="card-badge">1 - 2 Personas</span>
+                            <h3>Habitación Individual Confort</h3>
+                            <p>Equipada con cama matrimonial, baño privado, escritorio ejecutivo y aire acondicionado.</p>
+                            <div class="room-specs">
+                                <span>24 m²</span>
+                                <span>WiFi Gratis</span>
+                                <span>Smart TV</span>
+                            </div>
+                            <div class="price">$40 / noche</div>
+                            <a href="reservas.html?habitacion=individual" class="btn">Seleccionar habitación</a>
+                        </div>
+                    </article>
+
+                    <article class="card" data-category="doble">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Habitación Doble">
+                        <div class="card-content">
+                            <span class="card-badge">Hasta 4 Personas</span>
+                            <h3>Habitación Doble Estándar</h3>
+                            <p>Dos camas matrimoniales amplias, cafetera de cortesía, caja fuerte y acceso a piscina.</p>
+                            <div class="room-specs">
+                                <span>34 m²</span>
+                                <span>2 Camas</span>
+                                <span>Desayuno</span>
+                            </div>
+                            <div class="price">$65 / noche</div>
+                            <a href="reservas.html?habitacion=doble" class="btn">Seleccionar habitación</a>
+                        </div>
+                    </article>
+
+                    <article class="card" data-category="doble">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80" alt="Doble Ejecutiva">
+                        <div class="card-content">
+                            <span class="card-badge">Vista Piscina</span>
+                            <h3>Habitación Doble Ejecutiva</h3>
+                            <p>Balcón privado con vista a los jardines, cama Queen size y área de lectura iluminada.</p>
+                            <div class="room-specs">
+                                <span>38 m²</span>
+                                <span>Balcón</span>
+                                <span>Minibar</span>
+                            </div>
+                            <div class="price">$85 / noche</div>
+                            <a href="reservas.html?habitacion=ejecutiva" class="btn">Seleccionar habitación</a>
+                        </div>
+                    </article>
+
+                    <article class="card" data-category="suite">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Suite Real Azul">
+                        <div class="card-content">
+                            <span class="card-badge">Categoría Superior</span>
+                            <h3>Suite Real Azul</h3>
+                            <p>Sala de estar independiente, cama King size, tina de hidromasaje y vista panorámica.</p>
+                            <div class="room-specs">
+                                <span>58 m²</span>
+                                <span>Cama King</span>
+                                <span>Sala privada</span>
+                            </div>
+                            <div class="price">$150 / noche</div>
+                            <a href="reservas.html?habitacion=suite" class="btn">Seleccionar habitación</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Hotel Real Azul</h3>
+                    <p>Tu mejor opción de hospedaje en San Salvador. Elegancia, confort y atención personalizada las 24 horas.</p>
+                </div>
+                <div>
+                    <h3>Enlaces rápidos</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="habitaciones.html">Habitaciones</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="reservas.html">Reservas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>San Salvador, El Salvador</p>
+                    <p>Tel: +503 2200-0000</p>
+                    <p>info@hotelrealazul.com</p>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2026 Hotel Real Azul. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

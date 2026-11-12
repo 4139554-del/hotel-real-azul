@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Real Azul | Reserva tu estancia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">
+                <span class="royal-logo"><span class="royal-crown">♛</span></span>
+                <span class="hotel-name">Hotel <span>Real Azul</span></span>
+            </a>
+            <div class="header-right">
+                <span class="currency">USD</span>
+                <a href="contacto.html" class="header-link">Ayuda 24/7</a>
+                <div id="authArea" style="display:flex; align-items:center; gap:10px;">
+                    <a href="login.html" class="header-button">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hospedaje con distinción en San Salvador</h1>
+                <p>Comodidad, tranquilidad y atención personalizada en Hotel Real Azul.</p>
+
+                <form class="search-box" action="reservas.html" method="get">
+                    <div class="search-item">
+                        <label for="destino">Destino</label>
+                        <input type="text" id="destino" name="destino" value="San Salvador" required>
+                    </div>
+                    <div class="search-item">
+                        <label for="entrada">Fecha de entrada</label>
+                        <input type="date" id="entrada" name="entrada" required>
+                    </div>
+                    <div class="search-item">
+                        <label for="salida">Fecha de salida</label>
+                        <input type="date" id="salida" name="salida" required>
+                    </div>
+                    <button type="submit" class="search-button">Buscar disponibilidad</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Habitaciones recomendadas</h2>
+                <div class="cards-3">
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80" alt="Habitación Individual">
+                        <div class="card-content">
+                            <span class="card-badge">Ideal ejecutivos</span>
+                            <h3>Habitación Individual</h3>
+                            <p>Espacio tranquilo y moderno con cama matrimonial, escritorio y WiFi de alta velocidad.</p>
+                            <div class="price">$40 / noche</div>
+                            <a href="reservas.html?habitacion=individual" class="btn">Reservar ahora</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Habitación Doble">
+                        <div class="card-content">
+                            <span class="card-badge">Más solicitada</span>
+                            <h3>Habitación Doble</h3>
+                            <p>Mayor amplitud para viajar acompañado, con aire acondicionado, TV Smart y vista al jardín.</p>
+                            <div class="price">$65 / noche</div>
+                            <a href="reservas.html?habitacion=doble" class="btn">Reservar ahora</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Suite Real Azul">
+                        <div class="card-content">
+                            <span class="card-badge">Experiencia VIP</span>
+                            <h3>Suite Real Azul</h3>
+                            <p>Sala privada, cama King size, minibar de cortesía y vista panorámica de la capital.</p>
+                            <div class="price">$150 / noche</div>
+                            <a href="reservas.html?habitacion=suite" class="btn">Reservar ahora</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:0;">
+            <div class="container">
+                <h2>¿Por qué elegir Hotel Real Azul?</h2>
+                <div class="cards-4">
+                    <div class="advantage">
+                        <div class="advantage-icon">🛎️</div>
+                        <h3>Atención 24/7</h3>
+                        <p>Recepción y asistencia disponible a cualquier hora del día o la noche.</p>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage-icon">📶</div>
+                        <h3>WiFi de alta velocidad</h3>
+                        <p>Conexión estable en habitaciones, restaurante y áreas comunes.</p>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage-icon">🍽️</div>
+                        <h3>Restaurante</h3>
+                        <p>Gastronomía nacional e internacional con desayuno incluido.</p>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage-icon">🏊</div>
+                        <h3>Piscina climatizada</h3>
+                        <p>Área de descanso al aire libre con ambiente seguro y familiar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <div class="container">
+                <h2 style="color:#0b2575; font-size:28px; margin-bottom:24px;">Opiniones de nuestros huéspedes</h2>
+                <div class="cards-3">
+                    <article class="review-card">
+                        <div class="review-top">
+                            <span class="review-name">Sofía Martínez</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <h3>Excelente descanso</h3>
+                        <p>La habitación estaba impecable y muy silenciosa. El personal fue muy atento desde el check-in.</p>
+                        <div class="review-date">Hace 2 semanas</div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-top">
+                            <span class="review-name">Carlos Hernández</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <h3>Muy buena ubicación</h3>
+                        <p>La habitación doble es amplia y cómoda. El desayuno del restaurante tiene muy buen sabor.</p>
+                        <div class="review-date">Hace 1 mes</div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-top">
+                            <span class="review-name">Mariana Flores</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <h3>La Suite Real Azul es increíble</h3>
+                        <p>Ideal para un fin de semana especial. Todo limpio, ordenado y con parqueo privado seguro.</p>
+                        <div class="review-date">Hace 5 días</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Hotel Real Azul</h3>
+                    <p>Tu mejor opción de hospedaje en San Salvador. Elegancia, confort y atención personalizada las 24 horas.</p>
+                </div>
+                <div>
+                    <h3>Enlaces rápidos</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="habitaciones.html">Habitaciones</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="reservas.html">Reservas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>San Salvador, El Salvador</p>
+                    <p>Tel: +503 2200-0000</p>
+                    <p>info@hotelrealazul.com</p>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2026 Hotel Real Azul. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
